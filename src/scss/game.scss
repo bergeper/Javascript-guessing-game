@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(14, 14, 14, 0.822);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: rgba(155, 155, 155, 0.158);
+  padding: 50px;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 217, 0, 0.774);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--title {
+      color: rgba(255, 217, 0, 0.774);
+    }
+
+    &--input {
+      margin: 5px;
+      padding: 5px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgba(14, 14, 14, 0.822);
+      color: white;
+    }
+
+    &--btn {
+      margin: 5px;
+      width: 40%;
+      border-radius: 10px;
+      border: none;
+      padding: 5px;
+      background-color: rgba(255, 217, 0, 0.774);
+      &:hover {
+        background-color: white;
+      }
+      &:active {
+        scale: 0.9;
+      }
+    }
+  }
+}
